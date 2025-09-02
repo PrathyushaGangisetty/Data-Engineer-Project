@@ -1,6 +1,16 @@
-This project implements a realistic healthcare data model for a CCA (Clinical Care Advance) scenario covering Medicare/Medicaid. 
-It includes 5 source systems (Member & Eligibility, Claims & Encounters, Care Management, Provider Network, and Reference Codes) with 50 normalized tables and meaningful dummy data.
-On top, it provides both a Star schema (denormalized dims for fast BI) and a Snowflake schema (normalized dims for governance and reuse),
-plus Date/Member/Plan/Provider/Code/QualityMeasure dimensions and Facts for claims, encounters, eligibility, and care gaps. 
-The model is designed for SQL practice (joins, aggregations) and analytics (cost, utilization, quality performance),
-and can be used directly in SSMS or connected to BI tools.
+🏥 Healthcare Data Model
+
+This project builds a healthcare data warehouse in SQL Server with:
+
+📂 5 Source Systems → Eligibility, Claims, Care Management, Provider, Reference (50 tables with dummy data).
+
+⭐ Star Schema → Denormalized dimensions for fast BI reporting.
+
+❄️ Snowflake Schema → Normalized dimensions for governance & reduced redundancy.
+
+📊 Fact Tables → Claims, Encounters, Eligibility, and Care Gaps.
+
+🗂 Dimensions → Date, Member, Plan, Provider, Diagnosis, Procedure, POS, Quality Measure.
+
+🔍 Designed for SQL practice (joins, aggregations) and analytics (cost, utilization, quality performance).
+⚡ Can be explored in SSMS or connected to BI tools like Power BI/Tableau.
